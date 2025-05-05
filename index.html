@@ -4,17 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caixa Eletrônico</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Caixa Eletrônico</h1>
+
     <p>Saldo disponível: R$ <span id="saldo">1000</span></p>
-    <input type="number" id="valorSaque" placeholder="Valor a sacar" />
-    <button id="botaoSacar">Sacar</button>
+
+    <div class="campo">
+      <input type="number" id="valorDeposito" placeholder="Valor para depositar" />
+      <button id="botaoDepositar">Depositar</button>
+    </div>
+
+    <div class="campo">
+      <input type="number" id="valorSaque" placeholder="Valor para sacar" />
+      <button id="botaoSacar">Sacar</button>
+    </div>
+
     <p id="mensagem"></p>
   </div>
 
-  <script src="js/script.js"></script> <!-- Você vai criar esse -->
+  <script src="script.js"></script>
 </body>
 </html>
